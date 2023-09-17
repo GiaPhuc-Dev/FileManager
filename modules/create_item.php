@@ -11,7 +11,7 @@ if($type == 'file' || $type == 'folder'){
             $pattern = '~^[\w\s]+\.[a-z]+$~i';
         
             if(preg_match($pattern,$name)){
-    
+     
                 Make::createFile($parentDir,$name);
     
               

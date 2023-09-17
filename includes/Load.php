@@ -11,7 +11,7 @@ class Load
         } else {
             $path = _DATA_DIR . '/' . $parentDir;
         }
-
+ 
         $this->parentPath = $path;
 
         $dataScan = scandir($path);
