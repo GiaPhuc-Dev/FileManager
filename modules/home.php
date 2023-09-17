@@ -65,7 +65,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                                 <?php if ($load->isType($path) == 'file'): ?>
                                     <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-eye mx-1" aria-hidden="true"></i></a>
                                 <?php endif; ?>
-                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-trash mx-1" aria-hidden="true"></i></a>
+                                <a href="?module=remove_item&type=action&path=<?php echo $parentDir ?>&filename=<?php echo urlencode($item); ?>" onclick="return confirm('Bạn có chắc chắn')" class="btn btn-primary btn-sm"><i class="fa fa-trash mx-1" aria-hidden="true"></i></a>
                                 <a href="#" class="btn btn-primary btn-sm edit-action"
                                     data-type='<?php echo json_encode($dataTypeArr); ?>'><i class="fa fa-pencil-square-o mx-1"
                                         aria-hidden="true"></i></a>

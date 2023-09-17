@@ -29,7 +29,7 @@ if($type == 'file' || $type == 'folder'){
         }
     }
 }
-redirect('?path='.$parentDir);
+
 
 if(!empty($msg)){
     ?>
@@ -37,4 +37,6 @@ if(!empty($msg)){
         <?php echo $msg ?>
     </div>
     <?php
+}else{
+    redirect('?path='.$parentDir);
 }
